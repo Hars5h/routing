@@ -7,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./todo.component.css']
 })
 export class TodoComponent implements OnInit {
-  todo:any;
+  todata:any;
 
   constructor(private http:HttpClient) { }
+ 
 
   ngOnInit(): void {
   }
@@ -18,7 +19,7 @@ export class TodoComponent implements OnInit {
     this.http.get(URL)
     .subscribe(res=>{
        console.log(res)
-       this.todo=res;
+       this.todata=res;
     })
   }
 

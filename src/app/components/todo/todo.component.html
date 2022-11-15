@@ -1,1 +1,15 @@
-<button (click)="Todo()">Todo List</button>
+<button class="btn btn-success" (click)="Todo()">Todo List</button>
+<div >
+    <table class="table">
+        <tr >
+            <th>Id</th>
+            <th>Title</th>
+            <th>True/False</th>
+        </tr>
+        <tr *ngFor="let t of todata">
+            <td>{{t.id}}</td>
+            <td>{{t.title}}</td>
+            <td>{{t.completed}}</td>
+        </tr>
+    </table>
+</div>
