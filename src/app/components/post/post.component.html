@@ -1,0 +1,6 @@
+<button (click)="getpost ()">Posts</button>
+<div *ngFor="let a of postdata">
+     <h2>{{a.body}}</h2>
+     <article>{{a.title}}</article>
+     <hr>
+</div>

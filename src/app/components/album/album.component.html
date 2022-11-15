@@ -1,0 +1,7 @@
+<button (click)= "albm()" class="btn btn-primary">Album</button>
+    <div *ngFor="let alb of albums">
+
+      <li class="btn btn-danger">id-{{alb.id}}</li><br>
+       <p>title-{{alb.title}}</p>
+       <hr>
+</div>
